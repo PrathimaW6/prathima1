@@ -1,0 +1,48 @@
+
+--- Donation Management System ---
+1. Add Donor
+2. Display Donors
+3. Exit
+Enter your choice: 1
+Select Category:
+  1. Food
+  2. Clothes
+  3. Money
+Enter category number: 1
+Enter donor name: Alice
+Donor 'Alice' added to category 'Food'.
+
+--- Donation Management System ---
+1. Add Donor
+2. Display Donors
+3. Exit
+Enter your choice: 1
+Select Category:
+  1. Food
+  2. Clothes
+  3. Money
+Enter category number: 2
+Enter donor name: Bob
+Donor 'Bob' added to category 'Clothes'.
+
+--- Donation Management System ---
+1. Add Donor
+2. Display Donors
+3. Exit
+Enter your choice: 2
+
+Category: Food
+  - Alice
+
+Category: Clothes
+  - Bob
+
+Category: Money
+  No donors yet.
+
+--- Donation Management System ---
+1. Add Donor
+2. Display Donors
+3. Exit
+Enter your choice: 3
+Exiting program...
