@@ -22,8 +22,7 @@ Donor* donorLists[CATEGORY_COUNT] = { NULL };
 Donor* createDonor(const char* name) {
     Donor* newDonor = (Donor*)malloc(sizeof(Donor));
     if (!newDonor) {
-        printf("Memory allocation failed.
-");
+        printf("Memory allocation failed.\n");
         exit(1);
     }
     strncpy(newDonor->name, name, NAME_LEN);
@@ -34,8 +33,7 @@ Donor* createDonor(const char* name) {
 // Function to add donor to a category
 void addDonor(int categoryIndex, const char* name) {
     if (categoryIndex < 0 || categoryIndex >= CATEGORY_COUNT) {
-        printf("Invalid category.
-");
+        printf("Invalid category.\n");
         return;
     }
 
@@ -43,8 +41,8 @@ void addDonor(int categoryIndex, const char* name) {
     newDonor->next = donorLists[categoryIndex];
     donorLists[categoryIndex] = newDonor;
 
-    printf("Donor '%s' added to category '%s'.
-", name, categories[categoryIndex]);
+    printf("Donor '%s' added to category.\n"
+, name, categories[categoryIndex]);
 }
 
 // Function to display all donors in each category
